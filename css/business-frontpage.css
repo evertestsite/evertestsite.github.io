@@ -1,0 +1,128 @@
+/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    text-align: center;
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    text-align: center;
+    height: 350px;
+    background: url('../img/macbook.jpg') no-repeat;
+    background-size:100%;
+    display:block;
+    padding:0 !important;
+    margin:0;
+    background-position: center;
+    box-shadow: 
+    /* Mask: */
+    background: #D8D8D8;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+/*    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; */
+
+}
+
+
+.business-header img {
+    max-width: 400px;
+
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.services {
+    margin-top: 40px;
+
+}
+
+
+.founders {
+    text-align: center;
+}
+
+.founders img {
+    margin: 0 auto;
+    max-width: 200px;
+    
+}
+
+.about h2 {
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+
+.contact {
+    max-width: 960px;
+}
+
+.contact h1 {
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.address{
+    text-align: left;
+}
+
+.address a{
+    text-decoration: none;
+}
+
+.list-unstyled {
+    font-size: 1.5em;
+
+}
+
+footer {
+    margin: 50px 0;
+}
+
+
+/* Media queries */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+
+}
