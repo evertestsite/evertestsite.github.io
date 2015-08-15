@@ -4,10 +4,32 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+
+
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     text-align: center;
 }
+
+body p{
+    font-size: 1.2em;
+}
+
+body h1 {
+    margin-bottom: 1em;
+}
+
+.references {
+    text-align: center;
+}
+
+.referneces h2 {
+    margin: 20px 0 20px 0;
+}
+
+
+
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
