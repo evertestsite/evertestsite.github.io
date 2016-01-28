@@ -55,7 +55,10 @@ body h1 {
 
 
 .business-header img {
-    max-width: 400px;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 2%;
+    max-width: 35%;
 
 }
 
