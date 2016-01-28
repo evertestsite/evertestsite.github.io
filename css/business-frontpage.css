@@ -144,7 +144,7 @@ footer {
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 520px) {
+@media (min-width: 375px) {
 
 
 }
