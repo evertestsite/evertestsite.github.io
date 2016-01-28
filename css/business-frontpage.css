@@ -122,10 +122,7 @@ footer {
 
 
 /* Media queries */
-@media only screen and (min-device-width: 413px) and (max-device-width: 415px) { iPhone6+ Styles }
-@media only screen and (min-device-width: 374px) and (max-device-width: 376px) { iPhone6 Styles }
-@media only screen and (min-device-width: 359px) and (max-device-width: 361px) { iPhone6+ Alt Styles }
-@media only screen and (min-device-width: 319px) and (max-device-width: 321px) { iPhone5 or less Styles }
+@media only screen and (max-width: 415px)  { Smaller screen styles here }
 
 
 
