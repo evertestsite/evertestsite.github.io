@@ -121,14 +121,34 @@ footer {
 }
 
 
-/* Media queries */
-@media only screen and (max-width: 415px)  {  
-    .address {
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+        .address {
         text-align: center;
     }
     .googlemaps {
         display: none;
     }
+
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
 }
 
 
