@@ -206,10 +206,11 @@ footer {
 
     .business-header img {
         max-width: 60%;
+        padding-bottom: 30px;
     }
 
     .tagline {
-        font-size: 1.5em;
+        display: none;
     }
 
 
