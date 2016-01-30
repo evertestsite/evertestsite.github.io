@@ -30,10 +30,18 @@ body h1 {
 
 
 
-a, a:hover, a.hover {
+
+.services a, a:hover, a.hover {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+
+
+.taphere {
+    margin-bottom: 60px;
+    max-width: 200px;
+    min-width: 200px;
 }
 
 
@@ -82,8 +90,7 @@ a, a:hover, a.hover {
 }
 
 .services {
-    margin-top: 40px;
-
+    margin-top: 40px;   
 }
 
 
@@ -125,6 +132,7 @@ a, a:hover, a.hover {
 
 }
 
+
 footer {
     margin: 50px 0;
 }
@@ -134,13 +142,27 @@ footer {
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (min-width : 1200px) {
+    .services button {
+        display: none;
+    }
 }
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (min-width : 992px) {
+    .services button {
+        display: none;
+    }
 
 }
+
+@media only screen and (min-width : 768px) {
+    .services button {
+        display: none;
+    }
+
+}
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .address {
@@ -149,6 +171,7 @@ footer {
     .googlemaps {
         display: none;
     }
+
 }
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
@@ -160,7 +183,7 @@ footer {
     }
 
 }
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina  
 @media only screen and (max-width : 320px) {
     .address {
         text-align: center;
@@ -170,6 +193,6 @@ footer {
     }
     
 }
-
+*/
 
 
