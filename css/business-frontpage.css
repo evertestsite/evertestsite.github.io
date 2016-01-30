@@ -151,6 +151,8 @@ body h1 {
   vertical-align: middle;
 }
 
+
+
 footer {
     margin: 50px 0;
 }
@@ -189,6 +191,11 @@ footer {
     }
     .googlemaps {
         display: none;
+    }
+
+
+    .modal-footer {
+        text-align:center;
     }
 
 
