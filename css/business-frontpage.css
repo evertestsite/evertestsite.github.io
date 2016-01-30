@@ -167,7 +167,7 @@ footer {
 @media only screen and (max-width : 768px) {
     .address {
         text-align: center;
-        font-size: 0.8em;
+        font-size: 5em;
     }
     .googlemaps {
         display: none;
