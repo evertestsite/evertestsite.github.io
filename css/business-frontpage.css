@@ -196,6 +196,12 @@ footer {
 
     .modal-footer {
         text-align:center;
+        
+    }
+
+    .modal-footer button {
+        min-width: 200px;
+        max-width: 200px;
     }
 
 
