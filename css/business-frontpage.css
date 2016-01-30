@@ -167,14 +167,16 @@ footer {
 @media only screen and (max-width : 768px) {
     .address {
         text-align: center;
+        font-size: 1em;
     }
     .googlemaps {
         display: none;
     }
 
+
 }
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
+/*@media only screen and (max-width : 480px) {
     .address {
         text-align: center;
     }
@@ -182,7 +184,7 @@ footer {
         display: none;
     }
 
-}
+}*/
 /* Custom, iPhone Retina  
 @media only screen and (max-width : 320px) {
     .address {
