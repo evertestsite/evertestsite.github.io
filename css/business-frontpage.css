@@ -47,12 +47,11 @@ body h1 {
 
 
 
-
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .business-header {
     text-align: center;
-    height: 350px;
+    height: 70%;
     background: url('../img/macbook_sm.jp2') no-repeat;
     background-size:100%;
     display:block;
@@ -68,12 +67,13 @@ body h1 {
     background-size: cover;
     -o-background-size: cover;
 
+
 }
 
 
 .business-header img {
-    max-width: 350px;
-
+    padding-top: 10px;
+    max-width: 40%;
 }
 
 /* Customize the text color and shadow color and to optimize text legibility. */
@@ -203,6 +203,11 @@ footer {
         min-width: 200px;
         max-width: 200px;
     }
+
+    .business-header img {
+        max-width: 60%;
+    }
+
 
 
 }
