@@ -99,6 +99,12 @@ body h1 {
     margin: 0 auto;
 }
 
+.img-responsive {
+    margin: 0 auto;
+}
+
+
+
 .services {
     margin-top: 40px;   
 }
