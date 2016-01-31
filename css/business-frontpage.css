@@ -28,6 +28,11 @@ body h1 {
     margin: 20px 0 20px 0;
 }
 
+.companies {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
 
 
 
@@ -42,6 +47,11 @@ body h1 {
     margin-bottom: 60px;
     max-width: 200px;
     min-width: 200px;
+}
+
+.serviceelement {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -211,6 +221,11 @@ footer {
 
     .tagline {
         display: none;
+    }
+
+    .serviceelement {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 
