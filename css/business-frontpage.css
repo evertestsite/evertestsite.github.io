@@ -142,9 +142,7 @@ h2 {
     margin-top: 40px;
 }
 
-.address{
-    text-align: left;
-}
+
 
 .address a{
     text-decoration: none;
@@ -252,12 +250,18 @@ section {
     .services button {
         display: none;
     }
+
+    .address {
+        text-align: left;
+    }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .services button {
         display: none;
     }
+
+
 
 }
 
@@ -271,14 +275,6 @@ section {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    .address {
-        text-align: center;
-        font-size: 0.8em;
-    }
-    .googlemaps {
-        display: none;
-    }
-
 
 
     .modal-footer {
