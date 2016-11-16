@@ -3,61 +3,18 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
-
-
-
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    text-align: center;
+    padding-top: 50px
 }
 
-body p{
-    font-size: 1.3em;
+body p,p.client {
+    font-size: 1.3em
 }
 
 body h1 {
-    margin-bottom: 1em;
+    margin-bottom: 1em
 }
 
-.references {
-    text-align: center;
-}
-
-.referneces h2 {
-    margin: 20px 0 20px 0;
-}
-
-.companies {
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-
-
-
-.services a, a:hover, a.hover {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-
-.taphere {
-    margin-bottom: 60px;
-    max-width: 200px;
-    min-width: 200px;
-}
-
-.serviceelement {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-
-
-
-/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .business-header {
     text-align: center;
@@ -77,253 +34,215 @@ body h1 {
     background-size: cover;
     -o-background-size: cover;
 
-
 }
 
+.references,body {
+    text-align: center
+}
+
+.referneces h2 {
+    margin: 20px 0
+}
+
+.companies {
+    padding-bottom: 30px;
+    padding-top: 30px
+}
+
+.services a,a.hover,a:hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer
+}
+
+.taphere {
+    margin-bottom: 60px;
+    max-width: 200px;
+    min-width: 200px
+}
+
+.serviceelement,section {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
 
 .business-header img {
     padding-top: 10px;
-    max-width: 40%;
+    max-width: 40%
 }
-
-/* Customize the text color and shadow color and to optimize text legibility. */
 
 .tagline {
     text-shadow: 0 0 10px #000;
     color: #fff;
     font-size: 2em;
-    margin-right: 20px;
+    margin-right: 20px
 }
 
-.img-center {
-    margin: 0 auto;
-}
-
-.img-responsive {
-    margin: 0 auto;
+.img-center,.img-responsive {
+    margin: 0 auto
 }
 
 .customers {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
-
-
-
-
-.services {
-    margin-top: 40px;   
+.contact h1,.services {
+    margin-top: 40px
 }
-
 
 .founders {
-    text-align: center;
+    text-align: center
 }
 
 .founders img {
     margin: 0 auto;
-    max-width: 200px;
-    
+    max-width: 200px
 }
 
 h2 {
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 30px
 }
 
-
 .contact {
-    max-width: 960px;
+    max-width: 960px
 }
 
 .contact h1 {
-    margin-bottom: 60px;
-    margin-top: 40px;
+    margin-bottom: 60px
 }
 
-
-
-.address a{
-    text-decoration: none;
+.address a {
+    text-decoration: none
 }
 
 .list-unstyled {
-    font-size: 1.5em;
-
+    font-size: 1.5em
 }
 
 .modal {
-  text-align: center;
-  padding: 0!important;
+    text-align: center;
+    padding: 0!important
+}
+
+.modal-dialog,.modal:before {
+    display: inline-block;
+    vertical-align: middle
 }
 
 .modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px;
+    content: '';
+    height: 100%;
+    margin-right: -4px
 }
 
 .modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
+    text-align: left
 }
 
 .modal-footer {
-    display: none;
+    display: none
 }
 
-
-
 p.client {
-   font-size: 1.3em;
-   font-style: normal;
+    font-style: normal
 }
 
 .goblog {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 footer {
-    margin: 50px 0;
-}
-
-
-
-
-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: 50px 0
 }
 
 .quote {
     color: rgba(0,0,0,.1);
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
-
-/*-------------------------------*/
-/*    Carousel Fade Transition   */
-/*-------------------------------*/
 
 #fade-quote-carousel.carousel {
-  padding-bottom: 60px;
+    padding-bottom: 60px
 }
-#fade-quote-carousel.carousel .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-      -ms-transition-property: opacity;
-          transition-property: opacity;
+
+#fade-quote-carousel.carousel .carousel-inner .active,#fade-quote-carousel.carousel .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -ms-transition-property: opacity;
+    transition-property: opacity
 }
+
 #fade-quote-carousel.carousel .carousel-inner .active {
-  opacity: 1;
-  -webkit-transition-property: opacity;
-      -ms-transition-property: opacity;
-          transition-property: opacity;
+    opacity: 1
 }
+
 #fade-quote-carousel.carousel .carousel-indicators {
-  bottom: 10px;
+    bottom: 10px
 }
-#fade-quote-carousel.carousel .carousel-indicators > li {
-  background-color: black;
-  border: none;
+
+#fade-quote-carousel.carousel .carousel-indicators>li {
+    background-color: #000;
+    border: none
 }
+
 #fade-quote-carousel blockquote {
     text-align: center;
-    border: none;
+    border: none
 }
+
 #fade-quote-carousel .profile-circle {
     width: 100px;
     height: 100px;
     margin: 0 auto;
-    border-radius: 100px;
+    border-radius: 100px
 }
 
-
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width:1200px) {
     .services button {
-        display: none;
+        display: none
     }
 
     .address {
-        text-align: left;
+        text-align: left
     }
 }
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+
+@media only screen and (min-width:992px) {
     .services button {
-        display: none;
+        display: none
     }
-
-
-
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width:768px) {
     .services button {
-        display: none;
+        display: none
     }
-
 }
 
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
-
+@media only screen and (max-width:768px) {
     .modal-footer {
         display: block;
-        text-align:center;
+        text-align: center
     }
 
     .modal-footer button {
         min-width: 200px;
-        max-width: 200px;
+        max-width: 200px
     }
 
     .business-header img {
         max-width: 60%;
-        padding-bottom: 30px;
+        padding-bottom: 30px
     }
 
     .tagline {
-        display: none;
+        display: none
     }
 
     .serviceelement {
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 10px
     }
-
-
-
 }
-/* Extra Small Devices, Phones */ 
-/*@media only screen and (max-width : 480px) {
-    .address {
-        text-align: center;
-    }
-    .googlemaps {
-        display: none;
-    }
-
-}*/
-/* Custom, iPhone Retina  
-@media only screen and (max-width : 320px) {
-    .address {
-        text-align: center;
-    }
-    .googlemaps {
-        display: none;
-    }
-    
-}
-*/
-
-
