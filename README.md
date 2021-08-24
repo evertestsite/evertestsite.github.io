@@ -3,5 +3,5 @@
 This is a github pages to store Evertest website.
 
 ## Contact
-Árpád Tóth
-info@evertest.hu
+Ákos Kalocsai
+info@evertest.io
