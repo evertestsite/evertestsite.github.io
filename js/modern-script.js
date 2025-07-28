@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             .hero-section {
-                padding-top: 120px !important;
+                padding-top: 140px !important;
                 padding-bottom: 60px !important;
                 min-height: 100vh !important;
                 display: flex !important;
@@ -407,8 +407,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             .hero-content {
-                padding: 2rem 0 !important;
+                padding: 2rem 1rem !important;
                 text-align: center !important;
+                margin-top: 0 !important;
             }
             
             .hero-title {
@@ -455,7 +456,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         @media (max-width: 767.98px) {
             .hero-section {
-                padding-top: 100px !important;
+                padding-top: 120px !important;
                 min-height: 100vh !important;
                 min-height: calc(var(--vh, 1vh) * 100) !important;
             }
@@ -467,7 +468,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             .hero-content {
                 order: 2;
-                padding: 1rem 0 !important;
+                padding: 2rem 1rem !important;
+                margin-top: 0 !important;
             }
             
             .hero-image {
@@ -527,8 +529,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 padding-right: 1rem;
             }
             
+            .hero-section {
+                padding-top: 140px !important;
+            }
+            
             .hero-title {
                 font-size: 1.8rem !important;
+                margin-top: 0 !important;
+                padding-top: 0 !important;
             }
             
             .btn-lg {
@@ -587,7 +595,7 @@ document.addEventListener('DOMContentLoaded', function() {
         /* iPhone 14 specific adjustments */
         @media screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
             .hero-section {
-                padding-top: 120px !important;
+                padding-top: 140px !important;
                 min-height: 844px !important;
             }
             
@@ -724,13 +732,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     const vh = window.innerHeight * 0.01;
                     document.documentElement.style.setProperty('--vh', `${vh}px`);
                     
-                    // Force hero section to be visible
+                    // Calculate actual navbar height
+                    const navbar = document.querySelector('.navbar');
+                    const navbarHeight = navbar ? navbar.offsetHeight : 80;
+                    
+                    // Force hero section to be visible with proper padding
                     const heroSection = document.querySelector('.hero-section');
                     const heroTitle = document.querySelector('.hero-title');
                     const heroSubtitle = document.querySelector('.hero-subtitle');
                     
                     if (heroSection) {
                         heroSection.style.minHeight = `${window.innerHeight}px`;
+                        heroSection.style.paddingTop = `${navbarHeight + 40}px`;
                         heroSection.style.display = 'flex';
                         heroSection.style.alignItems = 'center';
                     }
@@ -741,6 +754,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         heroTitle.style.opacity = '1';
                         heroTitle.style.fontSize = '1.9rem';
                         heroTitle.style.lineHeight = '1.3';
+                        heroTitle.style.marginTop = '0';
                     }
                     
                     if (heroSubtitle) {
