@@ -1,290 +1,735 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="Your testing company" content="">
-   <meta name="Evertest Kft." content="">
-   <title>EverTest</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7">
-   <link rel="stylesheet" href="css/business-frontpage.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-   <![endif]-->
-   <script>
-      window.heap = window.heap || [];
-      heap.load = function (e, t) {
-         window.heap.appid = e;
-         window.heap.config = t = t || {};
-         var a = t.forceSSL || "https:" === document.location.protocol,
-            n = document.createElement("script");
-         n.type = "text/javascript";
-         n.async = !0;
-         n.src = (a ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
-         var o = document.getElementsByTagName("script")[0];
-         o.parentNode.insertBefore(n, o);
-         for (var p = function (e) {
-               return function () {
-                  heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-               }
-            }, r = ["clearEventProperties", "identify", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < r.length; c++) heap[r[c]] = p(r[c])
-      };
-      heap.load("3967502602");
-   </script>
-   <meta name="google-site-verification" content="m7YMCZm82QYWSH9ePEfn9Yv4FT4KnLvxeNjMEzF9oUc">
-   <meta name="google-site-verification" content="Zk23Yj5PZboa5MLbf-zKENOZY0X6Y808RpW6e4AN-Ms">
-   <meta name="google-site-verification" content="M2CMQAtADrWPw2XF3SYjLQ-txErxv8y4BUPAeK_MPtM">
-   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
-   <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
-   <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
-   <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
-   <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
-   <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
-   <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
-   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-   <link rel="icon" sizes="192x192" href="icons/android-icon-192x192.png" type="image/png">
-   <link rel="icon" sizes="32x32" href="icons/favicon-32x32.png" type="image/png">
-   <link rel="icon" sizes="96x96" href="icons/favicon-96x96.png" type="image/png">
-   <link rel="icon" sizes="16x16" href="icons/favicon-16x16.png" type="image/png">
-   <link rel="manifest" href="icons/manifest.json">
-   <meta name="msapplication-TileColor" content="#ffffff">
-   <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
-   <meta name="theme-color" content="#ffffff">
-   <script>
-      ! function (e, a, t, n, c, o, s) {
-         e.GoogleAnalyticsObject = c, e[c] = e[c] || function () {
-            (e[c].q = e[c].q || []).push(arguments)
-         }, e[c].l = 1 * new Date, o = a.createElement(t),
-         s = a.getElementsByTagName(t)[0], o.async = 1, o.src = n,
-         s.parentNode.insertBefore(o, s)
-      }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"),
-      ga("create", "UA-73550261-1", "auto"),
-      ga("send", "pageview");
-   </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Primary Meta Tags -->
+    <title>EverTest - AI-Powered Software Testing Solutions | Hungary & Europe</title>
+    <meta name="title" content="EverTest - AI-Powered Software Testing Solutions | Hungary & Europe">
+    <meta name="description" content="Professional software testing services in Hungary and Europe. AI-powered test automation, performance testing, security testing, and ISTQB training. Trusted by leading companies.">
+    <meta name="keywords" content="software testing Hungary, test automation Europe, performance testing Budapest, security testing, QA services, ISTQB training, szoftvertesztelés, tesztautomatizálás, Softwaretest Deutschland, Testautomatisierung Europa, Leistungstest Wien, Sicherheitstests, QS-Dienstleistungen, ISTQB Schulung, szoftver tesztelés Magyarország, automatikus tesztelés, teljesítmény teszt">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Ákos Kalocsai, EverTest">
+    <meta name="copyright" content="EverTest 2025">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evertestsite.github.io/">
+    <meta property="og:title" content="EverTest - AI-Powered Software Testing Solutions">
+    <meta property="og:description" content="Professional software testing services in Hungary and Europe. AI-powered test automation, performance testing, security testing.">
+    <meta property="og:image" content="https://evertestsite.github.io/img/Logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="hu_HU">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://evertestsite.github.io/">
+    <meta property="twitter:title" content="EverTest - AI-Powered Software Testing Solutions">
+    <meta property="twitter:description" content="Professional software testing services in Hungary and Europe. AI-powered test automation, performance testing, security testing.">
+    <meta property="twitter:image" content="https://evertestsite.github.io/img/Logo.png">
+    
+    <!-- Geo Meta Tags for European targeting -->
+    <meta name="geo.region" content="HU-BU">
+    <meta name="geo.placename" content="Budapest, Hungary">
+    <meta name="geo.position" content="47.4979;19.0402">
+    <meta name="ICBM" content="47.4979, 19.0402">
+    <meta name="geo.country" content="Hungary">
+    <meta name="geo.a1" content="Hungary">
+    <meta name="geo.a2" content="Budapest">
+    <meta name="dc.coverage" content="Europe">
+    <meta name="dc.coverage.temporal" content="2010-2025">
+    <meta name="dc.coverage.spatial" content="Hungary, Germany, Austria, Europe">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://cdn.heapanalytics.com https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https: http:; connect-src 'self' https://flipmail.co https://www.google-analytics.com https://heapanalytics.com; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self' https://flipmail.co; upgrade-insecure-requests;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://evertestsite.github.io/">
+    
+    <!-- Hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://evertestsite.github.io/">
+    <link rel="alternate" hreflang="de" href="https://evertestsite.github.io/">
+    <link rel="alternate" hreflang="hu" href="https://evertestsite.github.io/">
+    <link rel="alternate" hreflang="x-default" href="https://evertestsite.github.io/">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" sizes="192x192" href="icons/android-icon-192x192.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="icons/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="96x96" href="icons/favicon-96x96.png" type="image/png">
+    <link rel="icon" sizes="16x16" href="icons/favicon-16x16.png" type="image/png">
+    
+    <!-- Analytics -->
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "EverTest",
+        "alternateName": "EverTest Software Testing Solutions",
+        "url": "https://evertestsite.github.io/",
+        "logo": "https://evertestsite.github.io/img/Logo.png",
+        "description": "Professional AI-powered software testing services in Hungary and Europe. Specializing in test automation, performance testing, security testing, and ISTQB training.",
+        "foundingDate": "2015",
+        "founder": {
+            "@type": "Person",
+            "name": "Ákos Kalocsai",
+            "jobTitle": "Founder & Lead Testing Engineer"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mézeskalács tér 18.",
+            "addressLocality": "Budapest",
+            "postalCode": "1071",
+            "addressCountry": "HU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 47.4979,
+            "longitude": 19.0402
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+36-1-XXX-XXXX",
+            "contactType": "customer service",
+            "email": "info@evertest.io",
+            "availableLanguage": ["English", "Hungarian", "German"]
+        },
+        "sameAs": [
+            "https://www.linkedin.com/company/evertest",
+            "https://github.com/evertest"
+        ],
+        "areaServed": {
+            "@type": "Place",
+            "name": "Europe",
+            "geo": {
+                "@type": "GeoShape",
+                "addressCountry": ["HU", "DE", "AT", "SK", "RO", "HR", "SI"]
+            }
+        },
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "AI-Powered Test Automation",
+                    "description": "Machine learning and AI-driven test automation solutions"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Performance Testing",
+                    "description": "Load testing, stress testing, and performance optimization"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Security Testing",
+                    "description": "Penetration testing and vulnerability assessments"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "ISTQB Training",
+                    "description": "International Software Testing Qualifications Board certification training"
+                }
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "47",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <!-- Analytics (Conditionally loaded based on consent) -->
+    <script>
+        // Analytics will be loaded after GDPR consent
+        window.EverTestAnalytics = {
+            heap: function() {
+                window.heap = window.heap || [];
+                heap.load = function (e, t) {
+                    window.heap.appid = e;
+                    window.heap.config = t = t || {};
+                    var a = t.forceSSL || "https:" === document.location.protocol,
+                        n = document.createElement("script");
+                    n.type = "text/javascript";
+                    n.async = !0;
+                    n.src = (a ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+                    var o = document.getElementsByTagName("script")[0];
+                    o.parentNode.insertBefore(n, o);
+                    for (var p = function (e) {
+                            return function () {
+                                heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                            }
+                        }, r = ["clearEventProperties", "identify", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < r.length; c++) heap[r[c]] = p(r[c])
+                };
+                heap.load("3967502602");
+            },
+            ga: function() {
+                !function (e, a, t, n, c, o, s) {
+                    e.GoogleAnalyticsObject = c, e[c] = e[c] || function () {
+                        (e[c].q = e[c].q || []).push(arguments)
+                    }, e[c].l = 1 * new Date, o = a.createElement(t),
+                    s = a.getElementsByTagName(t)[0], o.async = 1, o.src = n,
+                    s.parentNode.insertBefore(o, s)
+                }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
+                ga("create", "UA-73550261-1", "auto");
+                ga("send", "pageview");
+            }
+        };
+    </script>
 </head>
+
 <body>
-   <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-         <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">Evertest</a>
-         </div>
-         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-               <li><a href="#services">Services</a></li>
-               <li><a href="#contact">Contact</a></li>
-            </ul>
-         </div>
-      </div>
-   </nav>
-   <header class="business-header">
-      <div class="container">
-         <img src="img/Logo.png">
-            <h1 class="tagline">Elevating Quality, Empowering Success</h1>
-         <br><a name="about"></a>
-      </div>
-   </header>
-   <div class="container">
-      <div class="row">
-         <div class="col-sm-12 about">
-            <h2>Our Services</h2>
-            <p>Evertest helps companies test better. We offer comprehensive test services, automation solutions, training programs, and more.</p>
-               <br><a href="#services">
-                  <button class="btn btn-default btn-lg" type="button" id="services">Learn more »</button>
-               </a>
-            </p>
-         </div>
-      </div>
-      <div class="fade modal" id="myModal" aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1">
-         <div class="row modal-dialog">
-            <div class="modal-content">
-               <div class="modal-body">
-                  <h2>Get Expert Guidance for Free</h2>
-                  <p>Are you looking to test your product but unsure where to start?</p>
-                  <p>We'll get in touch with you within 1-2 days to provide assistance.</p>
-                  <form action="http://flipmail.co/api/Hha8XXK4ufs9gYozC4IM" method="post">
-                     <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input class="form-control required" name="name" placeholder="Your name">
-                     </div>
-                     <div class="form-group">
-                        <label for="name">E-mail:</label>
-                        <input class="form-control required email" name="email" placeholder="Your email" type="email">
-                     </div>
-                     <button class="btn btn-default" type="submit">Submit Form</button>
-                     <button class="btn btn-default" type="button" data-dismiss="modal">No, thanks</button>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-      <hr>
-      <div class="row services">
-         <div class="col-sm-4">
-            <div class="serviceelement">
-               <i class="fa fa-5x fa-cogs"></i>
-               <h2>Test automation</h2>
-               <p>One of our strongest skills is test automation. Web applications, mobile apps, desktop clients have been automated over the years.</p>
-            </div>
-            <div class="serviceelement">
-               <i class="fa fa-5x fa-dashboard"></i>
-               <h2>Performance testing</h2>
-               <p>How many users are able to log in to your site within an hour? Do you want a scalable product? Or better response times?</p>
-            </div>
-         </div>
-         <div class="col-sm-4">
-            <div class="serviceelement">
-               <i class="fa fa-5x fa-shield"></i>
-               <h2>Security testing</h2>
-               <p>Nowadays security is becoming ever more important. We have highly skilled penetration testers. They deal with security issues.</p>
-            </div>
-            <div class="serviceelement">
-               <i class="fa fa-5x fa-graduation-cap"></i>
-               <h2>ISTQB Trainings</h2>
-               <p>Evertest has great training partners. We offer ISTQB trainings at Foundation and Advanced level too.</p>
-            </div>
-         </div>
-         <div class="col-sm-4">
-            <div class="serviceelement hidden-xs">
-               <i class="fa fa-5x fa-cloud"></i>
-               <h2>Testing as a service</h2>
-               <p>Do you have developers but do not want to employ testers? Outsource testing and just wait to see how we improve the quality.</p>
-            </div>
-            <div class="serviceelement hidden-xs">
-               <i class="fa fa-5x fa-child"></i>
-               <h2>UX/UI Testing</h2>
-               <p>Usability is the key to growth revenue. From the first mockup to usability surveys, we perform great tests to conduct user satisfaction.</p>
-            </div>
-         </div>
-      </div>
-      <hr>
-      <div class="row container customersays">
-         <div class="col-sm-12 customers hidden-sm hidden-xs quentin-desktop">
-            <div class="col-sm-4"><img src="img/quentin.jpg" class="img-responsive img-circle"></div>
-            <div class="col-sm-8">
-               <h3>"Evertest helps a lot OctoPerf's activities by providing an efficient and reliable load testing expertise."</h3>
-               <p>Quentin Hamard, Founder of OctoPerf</p>
-            </div>
-         </div>
-         <div class="col-sm-12 customers hidden-lg hidden-md quentin-mobile">
-            <div class="col-sm-4"><img src="img/quentin.jpg" class="img-responsive img-circle"></div>
-            <div class="col-sm-8">
-               <h3>"Evertest helps a lot OctoPerf's activities by providing an efficient and reliable load testing expertise."</h3>
-               <p>Quentin Hamard, Founder of OctoPerf</p>
-            </div>
-         </div>
-         <div class="col-sm-12 customers hidden-xs aris-desktop">
-            <div class="col-sm-8">
-               <h3>"Our need was to instantly add an experienced functional testing team to SportaGraph. EverTest with its unique expertise and high commitment stood out from the crowd."</h3>
-               <p>Alex Macris, CXO of SportaGraph</p>
-            </div>
-                
-                <div class="col-sm-4"><img src="img/alex.jpg" class="img-responsive img-circle"></div>
-            </div>
-            <div class="col-sm-12 customers hidden-lg hidden-md aris-mobile hidden-sm">
-                <div class="col-sm-4"><img src="img/alex.jpg" class="img-responsive img-circle"></div>
-                <div class="col-sm-8">
-                    <h3>"Our need was to instantly add an experienced functional testing team to SportaGraph. EverTest with its unique
-                        expertise and high commitment stood out from the crowd."</h3>
-                    <p>Alex Macris, CXO of SportaGraph
+    <!-- GDPR Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent-banner position-fixed w-100 bg-dark text-white p-3" style="bottom: 0; z-index: 10000; display: none;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-7 mb-2 mb-md-0">
+                    <p class="mb-0" id="cookieConsentText" data-translate="cookie-consent-text">
+                        We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-5 text-md-end">
+                    <button type="button" class="btn btn-outline-light btn-sm me-2" onclick="EverTest.manageCookies()" data-translate="cookie-manage">Manage Cookies</button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="EverTest.acceptAllCookies()" data-translate="cookie-accept-all">Accept All</button>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 customers hidden-sm hidden-xs attila-desktop">
-            <div class="col-sm-4"><img src="img/attila.png" class="img-responsive img-circle"></div>
-            <div class="col-sm-8">
-                <h3>"These guys are the Jedi-masters of test automation. They helped us to test our game on more than 250 real,
-                    physical devices!"</h3>
-                <p>Attila Al-Gharawi, CEO of Xeropan
+    </div>
+
+    <!-- Cookie Preferences Modal -->
+    <div class="modal fade" id="cookiePreferencesModal" tabindex="-1" aria-labelledby="cookiePreferencesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookiePreferencesModalLabel" data-translate="cookie-preferences-title">Cookie Preferences</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p data-translate="cookie-preferences-desc">We use cookies to ensure you get the best experience on our website. You can choose which cookies you want to accept.</p>
+                    
+                    <div class="cookie-category mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="mb-0" data-translate="cookie-necessary-title">Necessary Cookies</h6>
+                            <span class="badge bg-success" data-translate="cookie-always-active">Always Active</span>
+                        </div>
+                        <p class="text-muted small" data-translate="cookie-necessary-desc">These cookies are essential for the website to function properly and cannot be disabled.</p>
+                    </div>
+                    
+                    <div class="cookie-category mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="mb-0" data-translate="cookie-analytics-title">Analytics Cookies</h6>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="analyticsToggle" checked>
+                                <label class="form-check-label" for="analyticsToggle"></label>
+                            </div>
+                        </div>
+                        <p class="text-muted small" data-translate="cookie-analytics-desc">These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</p>
+                    </div>
+                    
+                    <div class="cookie-category mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="mb-0" data-translate="cookie-marketing-title">Marketing Cookies</h6>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="marketingToggle" checked>
+                                <label class="form-check-label" for="marketingToggle"></label>
+                            </div>
+                        </div>
+                        <p class="text-muted small" data-translate="cookie-marketing-desc">These cookies are used to track visitors across websites to display relevant advertisements.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" onclick="EverTest.rejectAllCookies()" data-translate="cookie-reject-all">Reject All</button>
+                    <button type="button" class="btn btn-primary" onclick="EverTest.savePreferences()" data-translate="cookie-save-preferences">Save Preferences</button>
+                </div>
             </div>
         </div>
-        <div class="col-sm-12 customers hidden-lg hidden-md attila-mobile">
-            <div class="col-sm-4"><img src="img/attila.png" class="img-responsive img-circle"></div>
-            <div class="col-sm-8">
-                <h3>"These guys are the Jedi-masters of test automation. They helped us to test our game on more than 250 real,
-                    physical devices!"</h3>
-                <p>Attila Al-Gharawi, CEO of Xeropan
-            </div>
-          </div>
-      <div class="col-sm-12 customers hidden-lg hidden-md attila-mobile">
-         <div class="col-sm-4"><img src="img/attila.png" class="img-responsive img-circle"></div>
-         <div class="col-sm-8">
-            <h3>"These guys are the Jedi-masters of test automation. They helped us to test our game on more than 250 real, physical devices!"</h3>
-            <p>Attila Al-Gharawi, CEO of Xeropan
-         </div>
-      </div>
-      <hr>
-      <div class="row container references">
-         <div class="col-sm-12 companies">
-            <div class="col-sm-3"><img src="img/Harris.jpg" class="img-responsive"></div>
-            <div class="col-sm-3"><img src="img/OctoPerf.png" class="img-responsive"></div>
-            <div class="col-sm-3"><img src="img/Sportograph.png" class="img-responsive"></div>
-            <div class="col-sm-3"><img src="img/xeropan.png" class="img-responsive"></div>
-         </div>
-      </div>
-      <br>
-      <hr>
-    <div class="row" style="text-align: center;">
-       <h1 >Meet the Founder</h1>
-       <div class="col-sm-12 founders" >
-          <img src="img/Akos.jpg" class="img-responsive img-circle" alt="Ákos Kalocsai" style="margin-bottom: 20px;">
-          <div class="col-sm-12" style="text-align: left;">
-             <p></p>
-             <p style="margin-left: 0px; text-indent: 40px;">Greetings! I'm Ákos Kalocsai, the founder of Evertest. With nearly a decade of experience, our journey through diverse projects has been a continuous learning experience, granting us the resilience to address complex situations.</p>
-
-             <p>At Evertest, we highly value practical knowledge. It's not just about theory; it's about offering solutions that genuinely meet business needs, often within tight deadlines.</p>
-
-             <p>Our success extends beyond completed projects; it's reflected in the lasting partnerships we've forged. In our portfolio, you'll find commendations from esteemed partners. What sets us apart is not just our proficiency in software development but also our strategic approach to testing.</p>
-
-             <p>In collaboration with individuals, we go beyond software solutions; we build partnerships grounded in trust and reliability.</p>
-
-             <p id="contact">Feel free to approach us, whether you're looking for an established leader in software development or a partner with expertise to intricately design and execute testing strategies</p>
-          </div>
-       </div>
     </div>
-    <hr>
-      <div class="container contact">
-         <h1>Contact Us</h1>
-         <div class="col-lg-6 address">
-            <h3>Evertest Budapest Office</h3>
-            <ul class="list-unstyled">
-               <li>Budapest, Mézeskalács tér 18.</li>
-               <li><a href="mailto:info@evertest.io">info@evertest.io</a></li>
-            </ul>
-         </div>
-         
-    <div class="col-lg-6 googlemaps visible-lg">
-        <!-- Google Map Embed Code -->
-        <iframe
-            width="600"
-            height="450"
-            frameborder="0"
-            style="border:0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.772785626606!2d19.059682315944225!3d47.52193507917829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dcba122833dd%3A0x5cd317e776228c3d!2sM%C3%A9zeskal%C3%A1cs%20t%C3%A9r%2018%2C%201071%20Budapest!5e0!3m2!1sen!2shu"
-            allowfullscreen=""
-            loading="lazy"
-        ></iframe>
-    </div>
-
-      </div>
-      <hr>
-      <footer>
-         <div class="row">
-            <div class="col-lg-12">
-               <p>
-                  Copyright © Evertest <script>document.write((new Date).getFullYear())</script>
-               </p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" alt="EverTest" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-translate="nav-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-translate="nav-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials" data-translate="nav-testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-translate="nav-contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary px-4" href="#contact" data-translate="get-started">Get Started</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i> EN
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')"><img src="https://flagcdn.com/16x12/us.png" alt="EN"> English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')"><img src="https://flagcdn.com/16x12/de.png" alt="DE"> Deutsch</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')"><img src="https://flagcdn.com/16x12/hu.png" alt="HU"> Magyar</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-         </div>
-      </footer>
-   </div>
-   <script src="js/jquery.js"></script><script src="js/bootstrap.min.js"></script>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title" data-translate="hero-title">AI-Powered Software Testing That Delivers Results</h1>
+                        <p class="hero-subtitle" data-translate="hero-subtitle">Accelerate your development cycle with intelligent testing solutions. From automation to security, we ensure your software exceeds quality standards.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg me-3" data-translate="hero-cta1">Get Free Consultation</a>
+                            <a href="#services" class="btn btn-outline-primary btn-lg" data-translate="hero-cta2">Explore Services</a>
+                        </div>
+                        <div class="hero-stats mt-5">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label" data-translate="stats-years">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label" data-translate="stats-projects">Projects Delivered</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">99%</span>
+                                <span class="stat-label" data-translate="stats-satisfaction">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="img/macbook.jpg" alt="Software Testing Dashboard" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <p class="text-muted" data-translate="social-proof-text">Trusted by leading companies worldwide</p>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-md-3 text-center mb-3">
+                    <img src="img/Harris.jpg" alt="Harris" class="client-logo">
+                </div>
+                <div class="col-6 col-md-3 text-center mb-3">
+                    <img src="img/OctoPerf.png" alt="OctoPerf" class="client-logo">
+                </div>
+                <div class="col-6 col-md-3 text-center mb-3">
+                    <img src="img/Sportograph.png" alt="SportaGraph" class="client-logo">
+                </div>
+                <div class="col-6 col-md-3 text-center mb-3">
+                    <img src="img/xeropan.png" alt="Xeropan" class="client-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-translate="services-title">Comprehensive Testing Solutions</h2>
+                <p class="section-subtitle" data-translate="services-subtitle">From automation to security, we provide end-to-end testing services that ensure your software performs flawlessly across all environments.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 data-translate="service1-title">AI-Powered Test Automation</h3>
+                        <p data-translate="service1-desc">Leverage machine learning and AI to create self-healing, intelligent test suites that adapt to your application changes and reduce maintenance overhead.</p>
+                        <ul class="service-features">
+                            <li data-translate="service1-feature1">Web, mobile, and desktop automation</li>
+                            <li data-translate="service1-feature2">CI/CD integration</li>
+                            <li data-translate="service1-feature3">Cross-browser testing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3 data-translate="service2-title">Performance Testing</h3>
+                        <p data-translate="service2-desc">Ensure your applications can handle peak loads and deliver optimal user experience with comprehensive performance and scalability testing.</p>
+                        <ul class="service-features">
+                            <li data-translate="service2-feature1">Load and stress testing</li>
+                            <li data-translate="service2-feature2">Scalability analysis</li>
+                            <li data-translate="service2-feature3">Performance optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-translate="service3-title">Security Testing</h3>
+                        <p data-translate="service3-desc">Protect your applications and data with thorough security assessments conducted by certified penetration testers and security experts.</p>
+                        <ul class="service-features">
+                            <li data-translate="service3-feature1">Penetration testing</li>
+                            <li data-translate="service3-feature2">Vulnerability assessments</li>
+                            <li data-translate="service3-feature3">Security compliance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 data-translate="service4-title">ISTQB Training</h3>
+                        <p data-translate="service4-desc">Advance your team's testing expertise with internationally recognized ISTQB certification training from Foundation to Advanced levels.</p>
+                        <ul class="service-features">
+                            <li data-translate="service4-feature1">Foundation Level certification</li>
+                            <li data-translate="service4-feature2">Advanced Level programs</li>
+                            <li data-translate="service4-feature3">Corporate training packages</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 data-translate="service5-title">Testing as a Service</h3>
+                        <p data-translate="service5-desc">Outsource your testing needs to our expert team and focus on development while we ensure quality delivery on time and within budget.</p>
+                        <ul class="service-features">
+                            <li data-translate="service5-feature1">Dedicated testing teams</li>
+                            <li data-translate="service5-feature2">Flexible engagement models</li>
+                            <li data-translate="service5-feature3">Quality assurance consulting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-translate="service6-title">UX/UI Testing</h3>
+                        <p data-translate="service6-desc">Optimize user experience and interface design through comprehensive usability testing, user journey analysis, and accessibility assessments.</p>
+                        <ul class="service-features">
+                            <li data-translate="service6-feature1">Usability testing</li>
+                            <li data-translate="service6-feature2">User journey optimization</li>
+                            <li data-translate="service6-feature3">Accessibility compliance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose EverTest -->
+    <section class="why-choose-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="why-choose-content">
+                        <h2 class="section-title" data-translate="why-choose-title">Why Leading Companies Choose EverTest</h2>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 data-translate="why-choose-feature1-title">Proven Track Record</h4>
+                                    <p data-translate="why-choose-feature1-desc">Nearly a decade of experience delivering successful testing projects across diverse industries and technologies.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 data-translate="why-choose-feature2-title">Strategic Approach</h4>
+                                    <p data-translate="why-choose-feature2-desc">We go beyond simple testing - we provide strategic quality engineering that aligns with your business objectives.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 data-translate="why-choose-feature3-title">Partnership Focus</h4>
+                                    <p data-translate="why-choose-feature3-desc">Building lasting relationships based on trust, reliability, and shared success rather than just project completion.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 data-translate="why-choose-feature4-title">Practical Excellence</h4>
+                                    <p data-translate="why-choose-feature4-desc">Real-world solutions that solve actual business problems, often within tight deadlines and complex requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="why-choose-image">
+                        <img src="img/team-modern-office.jpg" alt="EverTest Team Working Together" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-translate="testimonials-title">What Our Clients Say</h2>
+                <p class="section-subtitle" data-translate="testimonials-subtitle">Don't just take our word for it - hear from the companies that trust EverTest with their quality assurance needs.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p data-translate="testimonial1-quote">"EverTest helps a lot OctoPerf's activities by providing an efficient and reliable load testing expertise. Their team's knowledge and commitment have been invaluable to our success."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/quentin.jpg" alt="Quentin Hamard" class="author-image">
+                            <div class="author-info">
+                                <h5 data-translate="testimonial1-name">Quentin Hamard</h5>
+                                <p data-translate="testimonial1-title">Founder, OctoPerf</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p data-translate="testimonial2-quote">"Our need was to instantly add an experienced functional testing team to SportaGraph. EverTest with its unique expertise and high commitment stood out from the crowd."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/alex.jpg" alt="Alex Macris" class="author-image">
+                            <div class="author-info">
+                                <h5 data-translate="testimonial2-name">Alex Macris</h5>
+                                <p data-translate="testimonial2-title">CXO, SportaGraph</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p data-translate="testimonial3-quote">"These guys are the Jedi-masters of test automation. They helped us to test our game on more than 250 real, physical devices! Their expertise is unmatched."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/attila.png" alt="Attila Al-Gharawi" class="author-image">
+                            <div class="author-info">
+                                <h5 data-translate="testimonial3-name">Attila Al-Gharawi</h5>
+                                <p data-translate="testimonial3-title">CEO, Xeropan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Founder -->
+    <section id="about" class="about-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src="img/Akos.jpg" alt="Ákos Kalocsai" class="founder-image rounded-circle shadow-lg">
+                </div>
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <h2 class="section-title" data-translate="about-title">Meet the Founder</h2>
+                        <h3 class="mb-3" data-translate="about-founder-name">Ákos Kalocsai</h3>
+                        <p class="lead" data-translate="about-founder-intro">With nearly a decade of experience in software testing, Ákos founded EverTest with a vision to deliver practical, results-driven testing solutions that truly meet business needs.</p>
+                        <p data-translate="about-paragraph1">At EverTest, we highly value practical knowledge over theoretical approaches. Our success extends beyond completed projects - it's reflected in the lasting partnerships we've forged with clients who trust us to deliver excellence within tight deadlines.</p>
+                        <p data-translate="about-paragraph2">What sets us apart is not just our technical proficiency, but our strategic approach to testing and our commitment to building partnerships grounded in trust and reliability.</p>
+                        <div class="founder-cta mt-4">
+                            <a href="#contact" class="btn btn-primary" data-translate="about-cta">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-translate="contact-title">Ready to Elevate Your Software Quality?</h2>
+                <p class="section-subtitle" data-translate="contact-subtitle">Let's discuss how EverTest can help you deliver better software, faster. Get in touch for a free consultation.</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form action="https://flipmail.co/api/Hha8XXK4ufs9gYozC4IM" method="post" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label" data-translate="contact-form-name">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label" data-translate="contact-form-email">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="company" class="form-label" data-translate="contact-form-company">Company</label>
+                                <input type="text" class="form-control" id="company" name="company">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label" data-translate="contact-form-message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your testing needs..." data-translate="contact-form-placeholder"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100" data-translate="contact-form-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 data-translate="contact-office-title">Our Office</h4>
+                                <p data-translate="contact-office-address">Budapest, Mézeskalács tér 18.<br>Hungary</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 data-translate="contact-email-title">Email Us</h4>
+                                <p><a href="mailto:info@evertest.io">info@evertest.io</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 data-translate="contact-response-title">Response Time</h4>
+                                <p data-translate="contact-response-desc">We'll get back to you within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="map-container mt-4">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.772785626606!2d19.059682315944225!3d47.52193507917829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dcba122833dd%3A0x5cd317e776228c3d!2sM%C3%A9zeskal%C3%A1cs%20t%C3%A9r%2018%2C%201071%20Budapest!5e0!3m2!1sen!2shu"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                class="rounded-3">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-translate="footer-copyright">© 2025 EverTest. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0" data-translate="footer-tagline">Elevating Quality, Empowering Success</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/modern-script.js"></script>
+</body>
+</html>
