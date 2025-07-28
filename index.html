@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes, minimum-scale=1, maximum-scale=5">
     
     <!-- Primary Meta Tags -->
     <title>EverTest - AI-Powered Software Testing Solutions | Hungary & Europe</title>
@@ -288,8 +288,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/Logo.png" alt="EverTest" height="40">
+            <a class="navbar-brand" href="#" style="font-weight: 600; font-size: 1.5rem;">
+                <img src="img/Logo.png" alt="EverTest" height="45" style="filter: brightness(0.8) contrast(1.2);">
+                <span class="ms-2 text-dark" style="text-shadow: 0 1px 2px rgba(0,0,0,0.1);">EverTest</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -334,20 +335,20 @@
                     <div class="hero-content">
                         <h1 class="hero-title" data-translate="hero-title">AI-Powered Software Testing That Delivers Results</h1>
                         <p class="hero-subtitle" data-translate="hero-subtitle">Accelerate your development cycle with intelligent testing solutions. From automation to security, we ensure your software exceeds quality standards.</p>
-                        <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary btn-lg me-3" data-translate="hero-cta1">Get Free Consultation</a>
+                        <div class="hero-buttons d-flex flex-column flex-sm-row gap-3">
+                            <a href="#contact" class="btn btn-primary btn-lg" data-translate="hero-cta1">Get Free Consultation</a>
                             <a href="#services" class="btn btn-outline-primary btn-lg" data-translate="hero-cta2">Explore Services</a>
                         </div>
-                        <div class="hero-stats mt-5">
-                            <div class="stat-item">
+                        <div class="hero-stats mt-5 d-flex flex-column flex-sm-row justify-content-around text-center">
+                            <div class="stat-item mb-3 mb-sm-0">
                                 <span class="stat-number">10+</span>
                                 <span class="stat-label" data-translate="stats-years">Years Experience</span>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-item mb-3 mb-sm-0">
                                 <span class="stat-number">20+</span>
                                 <span class="stat-label" data-translate="stats-projects">Projects Delivered</span>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-item mb-3 mb-sm-0">
                                 <span class="stat-number">99%</span>
                                 <span class="stat-label" data-translate="stats-satisfaction">Client Satisfaction</span>
                             </div>
@@ -646,7 +647,7 @@
             <div class="row g-5">
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form action="https://flipmail.co/api/Hha8XXK4ufs9gYozC4IM" method="post" novalidate>
+                        <form id="contact-form" method="post" novalidate>
                             <div class="mb-3">
                                 <label for="name" class="form-label" data-translate="contact-form-name">Full Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required>

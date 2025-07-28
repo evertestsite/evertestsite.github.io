@@ -1,0 +1,158 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Office background -->
+  <rect x="0" y="0" width="800" height="400" fill="#e8e8e8"/>
+  <rect x="0" y="400" width="800" height="200" fill="#d0d0d0"/>
+  
+  <!-- Office windows in background -->
+  <rect x="50" y="50" width="120" height="180" fill="#b8d4f0" stroke="#999" stroke-width="2" rx="8"/>
+  <rect x="200" y="50" width="120" height="180" fill="#b8d4f0" stroke="#999" stroke-width="2" rx="8"/>
+  <rect x="350" y="50" width="120" height="180" fill="#b8d4f0" stroke="#999" stroke-width="2" rx="8"/>
+  
+  <!-- Window frames -->
+  <line x1="110" y1="50" x2="110" y2="230" stroke="#999" stroke-width="2"/>
+  <line x1="50" y1="140" x2="170" y2="140" stroke="#999" stroke-width="2"/>
+  <line x1="260" y1="50" x2="260" y2="230" stroke="#999" stroke-width="2"/>
+  <line x1="200" y1="140" x2="320" y2="140" stroke="#999" stroke-width="2"/>
+  <line x1="410" y1="50" x2="410" y2="230" stroke="#999" stroke-width="2"/>
+  <line x1="350" y1="140" x2="470" y2="140" stroke="#999" stroke-width="2"/>
+  
+  <!-- Office desks in background -->
+  <rect x="500" y="100" width="100" height="60" fill="#8d6e63" rx="4"/>
+  <rect x="620" y="120" width="100" height="60" fill="#8d6e63" rx="4"/>
+  <rect x="500" y="200" width="100" height="60" fill="#8d6e63" rx="4"/>
+  
+  <!-- Computers on background desks -->
+  <rect x="520" y="110" width="25" height="20" fill="#333" rx="2"/>
+  <rect x="640" y="130" width="25" height="20" fill="#333" rx="2"/>
+  <rect x="520" y="210" width="25" height="20" fill="#333" rx="2"/>
+  
+  <!-- Main desk/table -->
+  <ellipse cx="400" cy="450" rx="200" ry="80" fill="#6d4c41"/>
+  <ellipse cx="400" cy="440" rx="200" ry="80" fill="#8d6e63"/>
+  
+  <!-- Main monitor -->
+  <rect x="350" y="300" width="100" height="70" fill="#2c2c2c" rx="8"/>
+  <rect x="355" y="305" width="90" height="60" fill="#ffffff" rx="4"/>
+  
+  <!-- Monitor stand -->
+  <rect x="390" y="370" width="20" height="30" fill="#666"/>
+  <ellipse cx="400" cy="410" rx="25" ry="8" fill="#555"/>
+  
+  <!-- Screen content -->
+  <rect x="360" y="310" width="80" height="8" fill="#4CAF50"/>
+  <rect x="360" y="325" width="60" height="4" fill="#2196F3"/>
+  <rect x="360" y="335" width="70" height="4" fill="#2196F3"/>
+  <rect x="360" y="345" width="50" height="4" fill="#2196F3"/>
+  <circle cx="370" cy="355" r="3" fill="#FF5722"/>
+  <circle cx="380" cy="355" r="3" fill="#FFC107"/>
+  <circle cx="390" cy="355" r="3" fill="#4CAF50"/>
+  
+  <!-- Keyboard -->
+  <rect x="360" y="420" width="80" height="25" fill="#333" rx="4"/>
+  <rect x="365" y="425" width="8" height="6" fill="#666" rx="1"/>
+  <rect x="375" y="425" width="8" height="6" fill="#666" rx="1"/>
+  <rect x="385" y="425" width="8" height="6" fill="#666" rx="1"/>
+  <rect x="395" y="425" width="8" height="6" fill="#666" rx="1"/>
+  <rect x="405" y="425" width="8" height="6" fill="#666" rx="1"/>
+  <rect x="415" y="425" width="8" height="6" fill="#666" rx="1"/>
+  <rect x="425" y="425" width="8" height="6" fill="#666" rx="1"/>
+  
+  <!-- Mouse -->
+  <ellipse cx="460" cy="435" rx="8" ry="12" fill="#444"/>
+  
+  <!-- Person 1 (standing, pointing at screen) -->
+  <!-- Head -->
+  <circle cx="320" cy="280" r="25" fill="#f4c2a1"/>
+  <!-- Hair -->
+  <path d="M 295 270 Q 320 250 345 270 Q 340 260 320 255 Q 300 260 295 270" fill="#4a4a4a"/>
+  <!-- Body -->
+  <rect x="305" y="305" width="30" height="60" fill="#1a1a1a" rx="15"/>
+  <!-- Arms -->
+  <ellipse cx="285" cy="325" rx="8" ry="25" fill="#f4c2a1" transform="rotate(-20 285 325)"/>
+  <ellipse cx="355" cy="325" rx="8" ry="25" fill="#f4c2a1" transform="rotate(45 355 325)"/>
+  <!-- Legs -->
+  <ellipse cx="315" cy="380" rx="8" ry="25" fill="#333"/>
+  <ellipse cx="325" cy="380" rx="8" ry="25" fill="#333"/>
+  <!-- Shoes -->
+  <ellipse cx="315" cy="405" rx="12" ry="6" fill="#000"/>
+  <ellipse cx="325" cy="405" rx="12" ry="6" fill="#000"/>
+  
+  <!-- Person 2 (sitting left) -->
+  <!-- Head -->
+  <circle cx="250" cy="350" r="22" fill="#d4a574"/>
+  <!-- Hair -->
+  <path d="M 230 335 Q 250 320 270 335 Q 265 325 250 322 Q 235 325 230 335" fill="#8b4513"/>
+  <!-- Body -->
+  <rect x="238" y="372" width="24" height="45" fill="#c62828" rx="12"/>
+  <!-- Arms -->
+  <ellipse cx="220" cy="385" rx="7" ry="20" fill="#d4a574" transform="rotate(-30 220 385)"/>
+  <ellipse cx="280" cy="385" rx="7" ry="20" fill="#d4a574" transform="rotate(20 280 385)"/>
+  <!-- Legs (sitting) -->
+  <ellipse cx="245" cy="425" rx="7" ry="20" fill="#2e7d32" transform="rotate(0 245 425)"/>
+  <ellipse cx="255" cy="425" rx="7" ry="20" fill="#2e7d32" transform="rotate(0 255 425)"/>
+  
+  <!-- Person 3 (sitting center) -->
+  <!-- Head -->
+  <circle cx="400" cy="360" r="22" fill="#ffdbac"/>
+  <!-- Hair -->
+  <path d="M 380 345 Q 400 330 420 345 Q 415 335 400 332 Q 385 335 380 345" fill="#2e2e2e"/>
+  <!-- Body -->
+  <rect x="388" y="382" width="24" height="45" fill="#1565c0" rx="12"/>
+  <!-- Arms -->
+  <ellipse cx="370" cy="395" rx="7" ry="20" fill="#ffdbac" transform="rotate(-45 370 395)"/>
+  <ellipse cx="430" cy="395" rx="7" ry="20" fill="#ffdbac" transform="rotate(10 430 395)"/>
+  <!-- Legs (sitting) -->
+  <ellipse cx="395" cy="435" rx="7" ry="20" fill="#424242" transform="rotate(0 395 435)"/>
+  <ellipse cx="405" cy="435" rx="7" ry="20" fill="#424242" transform="rotate(0 405 435)"/>
+  
+  <!-- Person 4 (sitting right) -->
+  <!-- Head -->
+  <circle cx="550" cy="350" r="22" fill="#e6b885"/>
+  <!-- Hair -->
+  <path d="M 530 335 Q 550 315 570 335 Q 565 325 550 320 Q 535 325 530 335" fill="#654321"/>
+  <!-- Body -->
+  <rect x="538" y="372" width="24" height="45" fill="#d32f2f" rx="12"/>
+  <!-- Shirt pattern (checkered) -->
+  <rect x="540" y="375" width="4" height="4" fill="#fff"/>
+  <rect x="548" y="375" width="4" height="4" fill="#fff"/>
+  <rect x="556" y="375" width="4" height="4" fill="#fff"/>
+  <rect x="544" y="383" width="4" height="4" fill="#fff"/>
+  <rect x="552" y="383" width="4" height="4" fill="#fff"/>
+  <rect x="540" y="391" width="4" height="4" fill="#fff"/>
+  <rect x="548" y="391" width="4" height="4" fill="#fff"/>
+  <rect x="556" y="391" width="4" height="4" fill="#fff"/>
+  <!-- Arms -->
+  <ellipse cx="520" cy="385" rx="7" ry="20" fill="#e6b885" transform="rotate(-20 520 385)"/>
+  <ellipse cx="580" cy="385" rx="7" ry="20" fill="#e6b885" transform="rotate(30 580 385)"/>
+  <!-- Legs (sitting) -->
+  <ellipse cx="545" cy="425" rx="7" ry="20" fill="#795548" transform="rotate(0 545 425)"/>
+  <ellipse cx="555" cy="425" rx="7" ry="20" fill="#795548" transform="rotate(0 555 425)"/>
+  
+  <!-- Coffee cups on table -->
+  <ellipse cx="300" cy="440" rx="6" ry="8" fill="#8d6e63"/>
+  <ellipse cx="300" cy="438" rx="6" ry="3" fill="#d7ccc8"/>
+  <ellipse cx="500" cy="445" rx="6" ry="8" fill="#8d6e63"/>
+  <ellipse cx="500" cy="443" rx="6" ry="3" fill="#d7ccc8"/>
+  
+  <!-- Notebooks/papers -->
+  <rect x="320" y="435" width="15" height="20" fill="#fff" transform="rotate(15 327 445)"/>
+  <rect x="480" y="440" width="15" height="20" fill="#fff" transform="rotate(-10 487 450)"/>
+  
+  <!-- Pens -->
+  <rect x="340" y="442" width="1" height="12" fill="#1976d2" transform="rotate(25 340 448)"/>
+  <rect x="485" y="447" width="1" height="12" fill="#d32f2f" transform="rotate(-15 485 453)"/>
+  
+  <!-- Office plants in background -->
+  <ellipse cx="100" cy="300" rx="15" ry="25" fill="#4caf50"/>
+  <rect x="95" y="300" width="10" height="20" fill="#8d6e63"/>
+  <ellipse cx="650" cy="280" rx="12" ry="20" fill="#4caf50"/>
+  <rect x="646" y="280" width="8" height="15" fill="#8d6e63"/>
+  
+  <!-- Collaboration arrows/lines -->
+  <path d="M 340 310 Q 360 320 380 315" fill="none" stroke="#ffc107" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+  <path d="M 270 370 Q 300 350 330 360" fill="none" stroke="#ffc107" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+  <path d="M 470 370 Q 450 350 420 360" fill="none" stroke="#ffc107" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+</svg>

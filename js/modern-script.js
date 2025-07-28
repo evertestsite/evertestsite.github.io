@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Enhanced form handling with security
-    const contactForm = document.querySelector('#contact form');
+    // Set form action from configuration\n    const contactForm = document.querySelector('#contact-form');\n    if (contactForm && window.EverTestConfig && window.EverTestConfig.form.submitUrl) {\n        contactForm.action = window.EverTestConfig.form.submitUrl;\n    }
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             const submitBtn = this.querySelector('button[type="submit"]');
@@ -362,6 +362,150 @@ document.addEventListener('DOMContentLoaded', function() {
             object-fit: cover;
         }
         
+        /* Mobile Responsive Enhancements */
+        @media (max-width: 991.98px) {
+            .navbar-brand {
+                font-size: 1.3rem !important;
+            }
+            
+            .navbar-brand img {
+                height: 38px !important;
+            }
+            
+            .navbar-nav {
+                padding-top: 1rem;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                border-radius: 8px;
+                margin-top: 0.5rem;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-link {
+                padding: 0.75rem 1rem !important;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+            
+            .nav-link:last-child {
+                border-bottom: none;
+            }
+            
+            .hero-section {
+                padding-top: 100px;
+                min-height: auto;
+            }
+            
+            .hero-title {
+                font-size: 2rem !important;
+                line-height: 1.2;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem !important;
+                margin-bottom: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+            
+            .stat-item {
+                margin-bottom: 1rem;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .hero-section .row {
+                flex-direction: column-reverse;
+            }
+            
+            .hero-image {
+                margin-bottom: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem !important;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem !important;
+            }
+            
+            .service-card, .testimonial-card {
+                margin-bottom: 2rem;
+            }
+            
+            .contact-form {
+                margin-bottom: 3rem;
+            }
+            
+            #cookie-consent .row {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            #cookie-consent .col-md-8,
+            #cookie-consent .col-md-4 {
+                text-align: center;
+            }
+            
+            #cookie-consent .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 575.98px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem !important;
+            }
+            
+            .btn-lg {
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
+            
+            .navbar-brand span {
+                font-size: 1.2rem !important;
+            }
+        }
+        
+        /* Touch-friendly improvements */
+        @media (hover: none) and (pointer: coarse) {
+            .btn, .nav-link, .dropdown-item {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            .form-control, .form-select {
+                font-size: 16px; /* Prevents zoom on iOS */
+                min-height: 44px;
+            }
+            
+            .service-card:hover, .testimonial-card:hover {
+                transform: none; /* Disable hover effects on touch devices */
+            }
+        }
+        
         /* Cookie consent banner styles */
         .cookie-consent-banner {
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
@@ -459,8 +603,39 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // Parallax effect for hero section (optional, for modern browsers)
-    if (window.innerWidth > 768) {
+    // Mobile-specific functionality
+    function initMobileFunctionality() {
+        const isMobile = window.innerWidth <= 768;
+        
+        // Auto-close mobile menu when clicking nav links
+        if (isMobile) {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                        navbarToggler.click();
+                    }
+                });
+            });
+            
+            // Touch-friendly scroll behavior
+            document.documentElement.style.scrollBehavior = 'smooth';
+            
+            // Adjust viewport height for mobile browsers
+            const setVH = () => {
+                const vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+            };
+            setVH();
+            window.addEventListener('resize', setVH);
+        }
+    }
+    
+    // Parallax effect (disabled on mobile for performance)
+    if (!('ontouchstart' in window) && window.innerWidth > 768) {
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
             const heroImage = document.querySelector('.hero-image img');
@@ -469,6 +644,25 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+    // Initialize mobile functionality
+    initMobileFunctionality();
+    
+    // Add debounce utility function if not exists
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+    
+    // Re-initialize on resize
+    window.addEventListener('resize', debounce(initMobileFunctionality, 250));
 
     // Initialize tooltips if Bootstrap is available
     if (typeof bootstrap !== 'undefined') {
