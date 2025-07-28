@@ -391,23 +391,50 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             .hero-section {
-                padding-top: 100px;
-                min-height: auto;
+                padding-top: 120px !important;
+                padding-bottom: 60px !important;
+                min-height: 100vh !important;
+                display: flex !important;
+                align-items: center !important;
+            }
+            
+            .hero-section .container {
+                width: 100% !important;
+            }
+            
+            .hero-section .row {
+                align-items: center !important;
+            }
+            
+            .hero-content {
+                padding: 2rem 0 !important;
+                text-align: center !important;
             }
             
             .hero-title {
-                font-size: 2rem !important;
-                line-height: 1.2;
+                font-size: 2.2rem !important;
+                line-height: 1.2 !important;
+                margin-bottom: 1.5rem !important;
+                font-weight: 700 !important;
+                color: #1a1a1a !important;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
             }
             
             .hero-subtitle {
                 font-size: 1.1rem !important;
-                margin-bottom: 2rem;
+                margin-bottom: 2rem !important;
+                line-height: 1.6 !important;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
             }
             
             .hero-buttons {
                 flex-direction: column;
                 gap: 1rem;
+                margin-bottom: 2rem !important;
             }
             
             .hero-buttons .btn {
@@ -427,12 +454,39 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         @media (max-width: 767.98px) {
+            .hero-section {
+                padding-top: 100px !important;
+                min-height: 100vh !important;
+                min-height: calc(var(--vh, 1vh) * 100) !important;
+            }
+            
             .hero-section .row {
                 flex-direction: column-reverse;
+                min-height: 80vh;
+            }
+            
+            .hero-content {
+                order: 2;
+                padding: 1rem 0 !important;
             }
             
             .hero-image {
-                margin-bottom: 2rem;
+                order: 1;
+                margin-bottom: 1rem !important;
+                padding: 1rem 0;
+            }
+            
+            .hero-title {
+                font-size: 1.9rem !important;
+                line-height: 1.3 !important;
+                margin-bottom: 1rem !important;
+                padding: 0 1rem !important;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem !important;
+                margin-bottom: 1.5rem !important;
+                padding: 0 1rem !important;
             }
             
             .section-title {
@@ -503,6 +557,44 @@ document.addEventListener('DOMContentLoaded', function() {
             
             .service-card:hover, .testimonial-card:hover {
                 transform: none; /* Disable hover effects on touch devices */
+            }
+        }
+        
+        /* iOS Safari specific fixes */
+        @supports (-webkit-touch-callout: none) {
+            .hero-section {
+                min-height: 100vh !important;
+                min-height: -webkit-fill-available !important;
+                display: flex !important;
+                align-items: center !important;
+            }
+            
+            .hero-title, .hero-subtitle {
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: relative !important;
+                z-index: 10 !important;
+            }
+            
+            .hero-content {
+                position: relative !important;
+                z-index: 10 !important;
+                width: 100% !important;
+            }
+        }
+        
+        /* iPhone 14 specific adjustments */
+        @media screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+            .hero-section {
+                padding-top: 120px !important;
+                min-height: 844px !important;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem !important;
+                margin-bottom: 1rem !important;
+                font-weight: 700 !important;
             }
         }
         
@@ -606,6 +698,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile-specific functionality
     function initMobileFunctionality() {
         const isMobile = window.innerWidth <= 768;
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
         
         // Auto-close mobile menu when clicking nav links
         if (isMobile) {
@@ -624,13 +717,59 @@ document.addEventListener('DOMContentLoaded', function() {
             // Touch-friendly scroll behavior
             document.documentElement.style.scrollBehavior = 'smooth';
             
-            // Adjust viewport height for mobile browsers
-            const setVH = () => {
-                const vh = window.innerHeight * 0.01;
-                document.documentElement.style.setProperty('--vh', `${vh}px`);
-            };
-            setVH();
-            window.addEventListener('resize', setVH);
+            // iOS-specific fixes
+            if (isIOS) {
+                // Fix for iOS Safari viewport height issues
+                const fixIOSViewport = () => {
+                    const vh = window.innerHeight * 0.01;
+                    document.documentElement.style.setProperty('--vh', `${vh}px`);
+                    
+                    // Force hero section to be visible
+                    const heroSection = document.querySelector('.hero-section');
+                    const heroTitle = document.querySelector('.hero-title');
+                    const heroSubtitle = document.querySelector('.hero-subtitle');
+                    
+                    if (heroSection) {
+                        heroSection.style.minHeight = `${window.innerHeight}px`;
+                        heroSection.style.display = 'flex';
+                        heroSection.style.alignItems = 'center';
+                    }
+                    
+                    if (heroTitle) {
+                        heroTitle.style.display = 'block';
+                        heroTitle.style.visibility = 'visible';
+                        heroTitle.style.opacity = '1';
+                        heroTitle.style.fontSize = '1.9rem';
+                        heroTitle.style.lineHeight = '1.3';
+                    }
+                    
+                    if (heroSubtitle) {
+                        heroSubtitle.style.display = 'block';
+                        heroSubtitle.style.visibility = 'visible';
+                        heroSubtitle.style.opacity = '1';
+                    }
+                };
+                
+                fixIOSViewport();
+                window.addEventListener('resize', fixIOSViewport);
+                window.addEventListener('orientationchange', () => {
+                    setTimeout(fixIOSViewport, 100);
+                });
+                
+                // Prevent iOS zoom on input focus
+                const inputs = document.querySelectorAll('input, textarea, select');
+                inputs.forEach(input => {
+                    input.style.fontSize = '16px';
+                });
+            } else {
+                // Standard mobile viewport handling
+                const setVH = () => {
+                    const vh = window.innerHeight * 0.01;
+                    document.documentElement.style.setProperty('--vh', `${vh}px`);
+                };
+                setVH();
+                window.addEventListener('resize', setVH);
+            }
         }
     }
     
