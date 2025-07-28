@@ -1,0 +1,239 @@
+body {
+    padding-top: 50px;
+    text-align: center;
+}
+body p {
+    font-size: 1.3em;
+}
+body h1 {
+    margin-bottom: 1em;
+}
+.references {
+    text-align: center;
+}
+.referneces h2 {
+    margin: 20px 0 20px 0;
+}
+.companies {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.services a,
+a:hover,
+a.hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.taphere {
+    margin-bottom: 60px;
+    max-width: 200px;
+    min-width: 200px;
+}
+.serviceelement {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.business-header {
+    text-align: center;
+    height: 100%;
+    background: url('../img/background.jpg') no-repeat;
+    background-size: 70%;
+    display: block;
+    padding: 0 !important;
+    margin: 0;
+    background-position: center;
+    box-shadow: background: #D8D8D8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.50);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.business-header img {
+    padding-top: 10px;
+    max-width: 40%;
+}
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+}
+.img-center {
+    margin: 0 auto;
+}
+.img-responsive {
+    margin: 0 auto;
+}
+.customers {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.services {
+    margin-top: 40px;
+}
+.founders {
+    text-align: center;
+}
+.founders img {
+    margin: 0 auto;
+    max-width: 200px;
+}
+h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.contact {
+    max-width: 960px;
+}
+.contact h1 {
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.address a {
+    text-decoration: none;
+}
+.list-unstyled {
+    font-size: 1.5em;
+}
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+.modal-footer {
+    display: none;
+}
+p.client {
+    font-size: 1.3em;
+    font-style: normal;
+}
+.goblog {
+    margin-top: 20px;
+}
+
+.video{
+
+    margin-bottom: 30px;
+}
+footer {
+    margin: 50px 0;
+}
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.quote {
+    color: rgba(0, 0, 0, .1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+#fade-quote-carousel.carousel {
+    padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -ms-transition-property: opacity;
+    transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    -ms-transition-property: opacity;
+    transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+    bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+    background-color: black;
+    border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .services button {
+        display: none;
+    }
+    .address {
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .services button {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .services button {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .modal-footer {
+        display: block;
+        text-align: center;
+    }
+    .modal-footer button {
+        min-width: 200px;
+        max-width: 200px;
+    }
+    .business-header img {
+        max-width: 60%;
+        padding-bottom: 30px;
+    }
+    .tagline {
+        display: none;
+    }
+    .serviceelement {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

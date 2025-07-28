@@ -1,0 +1,76 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  
+  <!-- Office background elements -->
+  <rect x="50" y="50" width="500" height="300" fill="#ffffff" rx="8" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Desks -->
+  <rect x="80" y="200" width="120" height="80" fill="#6c757d" rx="4"/>
+  <rect x="220" y="200" width="120" height="80" fill="#6c757d" rx="4"/>
+  <rect x="360" y="200" width="120" height="80" fill="#6c757d" rx="4"/>
+  
+  <!-- Laptops -->
+  <rect x="90" y="210" width="50" height="30" fill="#343a40" rx="2"/>
+  <rect x="92" y="212" width="46" height="26" fill="#28a745" rx="1"/>
+  <rect x="230" y="210" width="50" height="30" fill="#343a40" rx="2"/>
+  <rect x="232" y="212" width="46" height="26" fill="#007bff" rx="1"/>
+  <rect x="370" y="210" width="50" height="30" fill="#343a40" rx="2"/>
+  <rect x="372" y="212" width="46" height="26" fill="#dc3545" rx="1"/>
+  
+  <!-- People -->
+  <!-- Person 1 -->
+  <circle cx="110" cy="180" r="15" fill="#ffdbac"/>
+  <rect x="95" y="195" width="30" height="40" fill="#007bff" rx="3"/>
+  <rect x="103" y="235" width="14" height="25" fill="#495057" rx="2"/>
+  
+  <!-- Person 2 -->
+  <circle cx="250" cy="180" r="15" fill="#d4a574"/>
+  <rect x="235" y="195" width="30" height="40" fill="#28a745" rx="3"/>
+  <rect x="243" y="235" width="14" height="25" fill="#495057" rx="2"/>
+  
+  <!-- Person 3 -->
+  <circle cx="390" cy="180" r="15" fill="#f4c2a1"/>
+  <rect x="375" y="195" width="30" height="40" fill="#dc3545" rx="3"/>
+  <rect x="383" y="235" width="14" height="25" fill="#495057" rx="2"/>
+  
+  <!-- Collaboration elements -->
+  <!-- Whiteboard -->
+  <rect x="460" y="80" width="100" height="80" fill="#ffffff" stroke="#6c757d" stroke-width="2" rx="4"/>
+  
+  <!-- Whiteboard content (diagrams) -->
+  <circle cx="490" cy="100" r="8" fill="none" stroke="#007bff" stroke-width="2"/>
+  <rect x="510" y="95" width="15" height="10" fill="none" stroke="#28a745" stroke-width="2"/>
+  <line x1="500" y1="120" x2="530" y2="120" stroke="#dc3545" stroke-width="2"/>
+  <line x1="500" y1="130" x2="520" y2="130" stroke="#dc3545" stroke-width="2"/>
+  <line x1="500" y1="140" x2="540" y2="140" stroke="#dc3545" stroke-width="2"/>
+  
+  <!-- Connection lines showing collaboration -->
+  <path d="M 125 190 Q 180 160 235 190" fill="none" stroke="#ffc107" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M 265 190 Q 320 160 375 190" fill="none" stroke="#ffc107" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Coffee cups -->
+  <rect x="150" y="215" width="8" height="12" fill="#8b4513" rx="1"/>
+  <ellipse cx="154" cy="215" rx="4" ry="2" fill="#d2691e"/>
+  
+  <rect x="290" y="215" width="8" height="12" fill="#8b4513" rx="1"/>
+  <ellipse cx="294" cy="215" rx="4" ry="2" fill="#d2691e"/>
+  
+  <!-- Code/testing symbols on screens -->
+  <text x="95" y="225" font-family="monospace" font-size="6" fill="#ffffff">&lt;/&gt;</text>
+  <text x="235" y="225" font-family="monospace" font-size="6" fill="#ffffff">TEST</text>
+  <text x="375" y="225" font-family="monospace" font-size="6" fill="#ffffff">QA</text>
+  
+  <!-- Window -->
+  <rect x="80" y="80" width="80" height="60" fill="#87ceeb" stroke="#6c757d" stroke-width="2" rx="4"/>
+  <line x1="120" y1="80" x2="120" y2="140" stroke="#6c757d" stroke-width="1"/>
+  <line x1="80" y1="110" x2="160" y2="110" stroke="#6c757d" stroke-width="1"/>
+  
+  <!-- Plants for office ambiance -->
+  <ellipse cx="520" cy="320" rx="15" ry="20" fill="#228b22"/>
+  <rect x="515" y="320" width="10" height="15" fill="#8b4513"/>
+  
+  <!-- Title text -->
+  <text x="300" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#343a40">EverTest Team</text>
+  <text x="300" y="370" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#6c757d">Collaborative Testing Excellence</text>
+</svg>
